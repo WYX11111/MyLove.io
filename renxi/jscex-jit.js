@@ -47,7 +47,7 @@
         if (root.modules["jit"]) {
             return;
         }
-    
+
         function JscexTreeGenerator(binder) {
             this._binder = binder;
             this._root = null;
