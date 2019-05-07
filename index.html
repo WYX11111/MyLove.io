@@ -179,6 +179,13 @@
 
         var textAnimate = eval(Jscex.compile("async", function () {
 		    
+            var together = new Date();
+            together.setFullYear(2019, 2, 21);          //时间年月日
+            together.setHours(23);                       //小时    
+            together.setMinutes(41);                 //分钟
+            together.setSeconds(0);                 //秒前一位
+            together.setMilliseconds(0);                //秒第二位
+
 		    $("#code").show().typewriter();
             $("#clock-box").fadeIn(5000);
             while (true) {
